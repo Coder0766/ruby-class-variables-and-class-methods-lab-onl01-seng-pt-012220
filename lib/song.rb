@@ -37,11 +37,12 @@ class Song
     genre_count= {}
       @@genres.each { |genre| }
         if genre_count[genre]
-            genre_count[genre] += 1
+            genre_count[genre]+= 1
         else #if the genre doesn't exist in our hash
-            genre_count[genre] = 1
+            genre_count[genre]= 1
         end
-    end
+  end
   genre_count
+
 
 end
