@@ -5,7 +5,7 @@ class Song
     @@count=  0
     @@artists= []
     @@genres= []
-    @@genre_count= {}
+
 
     attr_accessor :name, :artist, :genre
 
@@ -35,7 +35,13 @@ class Song
   end
 
   def self.genre_count
-    @@genre_count = @@genre.to_h && @@count.to_h
+    genre_count= {}
+    genre_count.each { |genre| }
+      if genre_count [grenre]
+          genre_count [genre] += 1
+      else #if the genre doesn't exist in our hash
+          genre_count[genre]= 1
+      end
     end
   end
 
