@@ -21,7 +21,7 @@ class Song
     # binding.pry
   def self.count
       binding.pry
-    @@count[] = count.map {|count| count.lenth}
+    @@count[] = count.map {|count| count.length}
     return @@count
   end
     # binding.pry
