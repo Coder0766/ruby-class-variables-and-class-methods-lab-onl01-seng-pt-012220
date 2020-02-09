@@ -34,15 +34,17 @@ class Song
 
   def self.genre_count
     genre_count= {}
-      @@genres.each { |genre| }
+      @@genres.each do |genre|
         if genre_count[genre]
             genre_count[genre]+= 1
         else #if the genre doesn't exist in our hash
             genre_count[genre]= 1
         end
-  end
+      end
 
-  genre_count
+    genre_count
+
+    end
 
 
 end
