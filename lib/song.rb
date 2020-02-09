@@ -34,14 +34,14 @@ class Song
 
   def self.genre_count
     genre_count= {}
-      @@genres.map.each { |genre| }
+      @@genres.map.each { |genres| }
         if genre_count[genre]
             genre_count[genre]+= 1
         else #if the genre doesn't exist in our hash
             genre_count[genre]= 1
         end
   end
-  genres_count
+  genre_count
 
 
 end
