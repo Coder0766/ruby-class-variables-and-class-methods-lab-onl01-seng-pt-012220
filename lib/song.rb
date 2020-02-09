@@ -35,7 +35,7 @@ class Song
   end
 
   def self.genre_count
-    @@genre_count = genre[@@genres.each_slice(2).to_a]
+    @@genre_count = @@genre.to_h && @@count.to_h
   end
 
 end
