@@ -22,7 +22,6 @@ class Song
     # binding.pry
   def self.count
     @@count
-    @@count = count.map.each {|count| count.length}
   end
 
 
