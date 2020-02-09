@@ -1,22 +1,32 @@
 require 'pry'
 
 class Song
-  # binding.pry
-    @@count= 0
+    # binding.pry
+    @@count=  0
+    @@artists= []
+    @@genres= []
 
     attr_accessor :name, :artist, :genre
-  # binding.pry
 
+    # binding.pry
   def initialize(name, artist, genre)
-    @@count += 1
+    @@count+= 1
+    @@artists << artist
+    @@genres << genre
     @name= name
     @artist= artist
     @genre= genre
   end
 
+    # binding.pry
   def self.count
-    @@count= count
+    # binding.pry
+    # @@count = count.each {|count| count.length}
+    return @@count[].uniq!
   end
-
+    # binding.pry
+  def self.count
+    @@artists
+  end
 
 end
