@@ -28,4 +28,8 @@ class Song
     @@artists.uniq!
     end
 
+  def self.genres
+    @@grenres.uniq!
+  end
+
 end
