@@ -25,7 +25,7 @@ class Song
   end
 
   def self.artists
-    @@artist= self.map.each { |self|  self.length }
+    @@artists= self.map.each { |self|  self.length }
     end
   end
 
