@@ -20,9 +20,9 @@ class Song
 
     # binding.pry
   def self.count
-    # binding.pry
-    # @@count = count.each {|count| count.length}
-    return @@count[].uniq!
+      binding.pry
+    @@count[] = count.map {|count| count.lenth}
+    return @@count
   end
     # binding.pry
   def self.count
